@@ -1,9 +1,10 @@
 import Link from "next/link";
+import CreditCard from "./CreditCard";
 
 const HeroSection = () => {
 	return (
 		<div className="flex w-full flex-col md:flex-row items-center gap-8 p-8">
-			<div className="h-32 w-64 bg-red-200"></div>
+			<CreditCard />
 			<div className="p-2">
 				<p className="text-xl">Hello, there! 👋</p>
 				<p className="py-4">Welcome to my personal website.</p>
@@ -11,7 +12,10 @@ const HeroSection = () => {
 					I've recently finished my Master's of Informatics at Technical
 					University of Munich. I'm working full-time as a software engineer at
 					Brainlab. If you want to know more about me, head over to my{" "}
-					<Link href="/about">"About Me"</Link> page.
+					<Link className="text-blue-500" href="/about">
+						About Me
+					</Link>{" "}
+					page.
 				</p>
 				<p className="py-4">Don't forget to follow me on social sites:</p>
 				<div className="flex flex-row gap-4 flex-wrap">

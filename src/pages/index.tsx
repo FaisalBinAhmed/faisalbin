@@ -1,5 +1,6 @@
 import { JetBrains_Mono } from "next/font/google";
 import HeroSection from "@/components/HeroSection";
+import NavCardsSection from "@/components/NavCardsSection";
 
 const jbm = JetBrains_Mono({
 	subsets: ["latin"]
@@ -8,8 +9,9 @@ const jbm = JetBrains_Mono({
 export default function Home() {
 	return (
 		<main
-			className={`flex min-h-screen flex-col items-center justify-between ${jbm.className}`}>
+			className={`flex min-h-screen flex-col items-center ${jbm.className}`}>
 			<HeroSection />
+			<NavCardsSection />
 		</main>
 	);
 }
