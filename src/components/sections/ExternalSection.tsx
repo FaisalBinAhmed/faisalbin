@@ -3,7 +3,7 @@ import Link from "next/link";
 const ExternalSection = () => {
 	return (
 		<div className="flex flex-col md:flex-row p-8 gap-8">
-			<div className="min-w-[340px] text-right">Other Sites</div>
+			<div className="min-w-[340px] text-right"></div>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
 				<ExternalCard
 					title="Failab"

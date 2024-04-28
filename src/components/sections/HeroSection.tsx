@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CreditCard from "./CreditCard";
+import CreditCard from "../CreditCard";
 
 const HeroSection = () => {
 	return (
@@ -12,7 +12,7 @@ const HeroSection = () => {
 					I've recently finished my Master's of Informatics at Technical
 					University of Munich. I'm working full-time as a software engineer at
 					Brainlab. If you want to know more about me, head over to my{" "}
-					<Link className="text-blue-500" href="/about">
+					<Link className="bg-emerald-700/[0.2] text-emerald-500" href="/about">
 						About Me
 					</Link>{" "}
 					page.

@@ -1,8 +1,7 @@
 import { JetBrains_Mono } from "next/font/google";
-import HeroSection from "@/components/HeroSection";
-import NavCardsSection from "@/components/NavCardsSection";
-import LinksSection from "@/components/LinksSection";
-import ExternalSection from "@/components/ExternalSection";
+import HeroSection from "@/components/sections/HeroSection";
+import NavCardsSection from "@/components/sections/NavCardsSection";
+import ExternalSection from "@/components/sections/ExternalSection";
 
 const jbm = JetBrains_Mono({
 	subsets: ["latin"]
@@ -15,7 +14,6 @@ export default function Home() {
 			<HeroSection />
 			<ExternalSection />
 			<NavCardsSection />
-			{/* <LinksSection /> */}
 		</main>
 	);
 }
