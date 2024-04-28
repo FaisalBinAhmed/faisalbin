@@ -11,6 +11,7 @@ const NavCardsSection = () => {
 						title={item.title}
 						desc={item.desc}
 						color={item.color}
+						icon={item.icon}
 					/>
 				))}
 			</div>
@@ -24,19 +25,20 @@ type CardProps = {
 	title: string;
 	desc: string;
 	color: string;
+	icon: string;
 };
 
-const Card = ({ title, desc, color }: CardProps) => {
+const Card = ({ title, desc, color, icon }: CardProps) => {
 	return (
 		<div
-			style={{ backgroundColor: color }}
-			className="flex flex-col gap-2 min-h-32 bg-blue-200 p-2 rounded text-black">
+			// style={{ outlineColor: color }}
+			className="flex flex-col gap-2 p-2 min-h-32 bg-black hover:bg-[#252525] dark:text-white rounded text-black">
 			<div className="flex justify-between">
-				<h1 className="text-xl font-bold">{title}</h1>
-				<img src="/assets/twitter.png" className="w-10" />
+				<h1 className="text-xl p-2">{title}</h1>
+				<img src={icon} className="w-10" />
 			</div>
 
-			<p className="card-description">{desc}</p>
+			<p className="text-neutral-400 p-2">{desc}</p>
 		</div>
 	);
 };

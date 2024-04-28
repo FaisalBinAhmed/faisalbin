@@ -11,7 +11,7 @@ const navItems: Array<NavItem> = [
 		title: "About Me",
 		desc: "I'm a 26 years old engineer from Munich I'd like to... ",
 		color: "#a2de96",
-		icon: "/assets/twitter.png",
+		icon: "/assets/icons/identification.svg",
 
 		route: "/about"
 	},
@@ -19,7 +19,7 @@ const navItems: Array<NavItem> = [
 		title: "Projects",
 		desc: "Dev works ",
 		color: "#FF8A80",
-		icon: "/assets/twitter.png",
+		icon: "/assets/icons/code-bracket.svg",
 
 		route: "/projects"
 	},
@@ -27,7 +27,7 @@ const navItems: Array<NavItem> = [
 		title: "Research",
 		desc: "Published papers, academic articles",
 		color: "#fbd46d",
-		icon: "/assets/twitter.png",
+		icon: "/assets/icons/academic.svg",
 
 		route: "/papers"
 	},
@@ -35,7 +35,7 @@ const navItems: Array<NavItem> = [
 		title: "Designs",
 		desc: "Graphics, UI/UX works ",
 		color: "#64c4ed",
-		icon: "/assets/twitter.png",
+		icon: "/assets/icons/swatch.svg",
 
 		route: "/designs"
 	},
@@ -43,7 +43,7 @@ const navItems: Array<NavItem> = [
 		title: "Resume",
 		color: "#e1ccec",
 		desc: "TBA ",
-		icon: "/assets/twitter.png",
+		icon: "/assets/icons/document-text.svg",
 
 		route: "/"
 	}
