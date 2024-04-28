@@ -9,7 +9,7 @@ type NavItem = {
 const navItems: Array<NavItem> = [
 	{
 		title: "About Me",
-		desc: "I'm a 26 years old engineer from Munich I'd like to... ",
+		desc: "Short bio, skills, interests",
 		color: "#a2de96",
 		icon: "/assets/icons/identification.svg",
 
@@ -17,7 +17,7 @@ const navItems: Array<NavItem> = [
 	},
 	{
 		title: "Projects",
-		desc: "Dev works ",
+		desc: "Open-source projects, apps, websites",
 		color: "#FF8A80",
 		icon: "/assets/icons/code-bracket.svg",
 
@@ -33,7 +33,7 @@ const navItems: Array<NavItem> = [
 	},
 	{
 		title: "Designs",
-		desc: "Graphics, UI/UX works ",
+		desc: "Graphics, UI/UX works",
 		color: "#64c4ed",
 		icon: "/assets/icons/swatch.svg",
 
@@ -42,7 +42,7 @@ const navItems: Array<NavItem> = [
 	{
 		title: "Resume",
 		color: "#e1ccec",
-		desc: "Download my current resume ",
+		desc: "Download my current resume",
 		icon: "/assets/icons/document-text.svg",
 
 		route: "/"
