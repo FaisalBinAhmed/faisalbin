@@ -1,4 +1,5 @@
 import navItems from "@/data/navItems";
+import Link from "next/link";
 
 const NavCardsSection = () => {
 	return (
@@ -12,6 +13,7 @@ const NavCardsSection = () => {
 						desc={item.desc}
 						color={item.color}
 						icon={item.icon}
+						link={item.route}
 					/>
 				))}
 			</div>
@@ -26,19 +28,22 @@ type CardProps = {
 	desc: string;
 	color: string;
 	icon: string;
+	link: string;
 };
 
-const Card = ({ title, desc, color, icon }: CardProps) => {
+const Card = ({ title, desc, color, icon, link }: CardProps) => {
 	return (
 		<div
 			// style={{ outlineColor: color }}
-			className="flex flex-col gap-2 p-2 min-h-32 bg-black hover:bg-[#252525] dark:text-white rounded text-black">
-			<div className="flex justify-between">
-				<h1 className="text-xl p-2">{title}</h1>
-				<img src={icon} className="w-10" />
-			</div>
+			className="flex flex-col gap-2 p-2 min-h-32 bg-black hover:bg-[#252525] text-white rounded border border-white/[0.1]">
+			<Link href={link}>
+				<div className="flex justify-between">
+					<h1 className="text-xl p-2">{title}</h1>
+					<img src={icon} className="w-10" />
+				</div>
 
-			<p className="text-neutral-400 p-2">{desc}</p>
+				<p className="text-neutral-400 p-2">{desc}</p>
+			</Link>
 		</div>
 	);
 };

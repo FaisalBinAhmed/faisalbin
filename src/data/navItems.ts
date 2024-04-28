@@ -42,7 +42,7 @@ const navItems: Array<NavItem> = [
 	{
 		title: "Resume",
 		color: "#e1ccec",
-		desc: "TBA ",
+		desc: "Download my current resume ",
 		icon: "/assets/icons/document-text.svg",
 
 		route: "/"
