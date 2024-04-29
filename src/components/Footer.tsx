@@ -1,29 +1,32 @@
-import { fetchDeploymentInfo } from "@/api/vercel";
+import { VercelContext } from "@/contexts/VercelContext";
 import quotes from "@/data/quotes";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
+const date = new Date().getFullYear();
 const Footer = () => {
-	const date = new Date().getFullYear();
+	const { deploymentInfo } = useContext(VercelContext);
+	const [quote, setQuote] = useState<string>(quotes[0]);
 
-	const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-
-	const [lastDeployedTime, setLastDeployedTime] = useState<number>();
+	function getRandomQuote() {
+		const randomIndex = Math.floor(Math.random() * quotes.length);
+		setQuote(quotes[randomIndex]); // avoid hydration mismatch
+	}
 
 	useEffect(() => {
-		async function fetchAndSetLastDeployedTime() {
-			const deploymentInfo = await fetchDeploymentInfo();
-			deploymentInfo && setLastDeployedTime(deploymentInfo.created);
-		}
-		fetchAndSetLastDeployedTime();
+		getRandomQuote();
 	}, []);
 
 	return (
 		<div className="flex flex-col m-4 md:m-8 bg-[#252525]/[0.3] rounded-xl border border-white/[0.1]">
-			<div className="text-neutral-400 p-4">{randomQuote}</div>
+			<div className="text-neutral-400 p-4">{quote}</div>
 			<p className="text-neutral-400 p-4 text-xs">
 				© {date}
-				{lastDeployedTime && (
-					<> | Deployed on {new Date(lastDeployedTime).toLocaleDateString()}</>
+				{deploymentInfo && (
+					<>
+						{" "}
+						| Deployed on{" "}
+						{new Date(deploymentInfo.created).toLocaleDateString()}
+					</>
 				)}
 			</p>
 		</div>

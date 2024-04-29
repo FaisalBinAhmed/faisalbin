@@ -1,4 +1,4 @@
-type Deployment = {
+export type Deployment = {
 	created: number;
 	ready: number;
 };
