@@ -1,10 +1,14 @@
 import CreditCard from "./CreditCard";
+import NavMenu from "./NavMenu";
 
 const Sidebar = () => {
 	return (
-		<div className="min-w-[340px] bg-black md:h-full">
-			<div className="flex flex-col m-4 items-center">
+		<div className="w-[340px] bg-black md:h-full">
+			<div className="flex h-full flex-col justify-between">
 				<CreditCard />
+				<div className="flex-1 invisible md:visible">
+					<NavMenu />
+				</div>
 			</div>
 		</div>
 	);
