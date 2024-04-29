@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const ExternalSection = () => {
 	return (
-		<div className="flex flex-col md:flex-row p-8 gap-8">
-			<div className="min-w-[340px] text-right"></div>
+		<div className="flex flex-col md:flex-row p-4 md:p-8 gap-8">
+			{/* <div className="min-w-[340px] text-right"></div> */}
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
 				<ExternalCard
 					title="Failab"
@@ -34,9 +34,9 @@ type CardProps = {
 
 const ExternalCard = ({ title, desc, color, icon, link }: CardProps) => {
 	return (
-		<div className="flex flex-col gap-2 min-h-32 bg-black hover:bg-[#252525] p-2 rounded border border-white/[0.1] ">
+		<div className="flex flex-col gap-2 min-h-32 bg-black hover:bg-[#252525] p-2 rounded-xl border border-white/[0.1] ">
 			<Link href={link} target="_blank">
-				<div className="flex justify-between">
+				<div className="flex justify-between items-center">
 					<h1 className="text-xl p-2">{title}</h1>
 					<img src={icon} className="w-12" />
 				</div>

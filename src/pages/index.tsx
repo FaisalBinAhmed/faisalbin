@@ -2,6 +2,7 @@ import { JetBrains_Mono } from "next/font/google";
 import HeroSection from "@/components/sections/HeroSection";
 import NavCardsSection from "@/components/sections/NavCardsSection";
 import ExternalSection from "@/components/sections/ExternalSection";
+import Sidebar from "@/components/Sidebar";
 
 const jbm = JetBrains_Mono({
 	subsets: ["latin"]
@@ -10,10 +11,13 @@ const jbm = JetBrains_Mono({
 export default function Home() {
 	return (
 		<main
-			className={`flex min-h-screen flex-col items-center ${jbm.className}`}>
-			<HeroSection />
-			<ExternalSection />
-			<NavCardsSection />
+			className={`flex h-screen flex-col md:flex-row items-center ${jbm.className}`}>
+			<Sidebar />
+			<div className="flex h-screen md:overflow-scroll flex-col">
+				<HeroSection />
+				<ExternalSection />
+				<NavCardsSection />
+			</div>
 		</main>
 	);
 }

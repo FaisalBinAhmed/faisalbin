@@ -3,8 +3,8 @@ import CreditCard from "../CreditCard";
 
 const HeroSection = () => {
 	return (
-		<div className="flex w-full flex-col md:flex-row items-center gap-8 p-8">
-			<CreditCard />
+		<div className="flex w-full flex-col md:flex-row items-center gap-8 p-4 md:p-8">
+			{/* <CreditCard /> */}
 			<div className="p-2">
 				<p className="text-xl">Hello, there! 👋</p>
 				<p className="py-4">Welcome to my personal website.</p>
