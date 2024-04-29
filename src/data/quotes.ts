@@ -1,7 +1,7 @@
 const quotes: Array<string> = [
 	"“If you can't put food on your table, sell the table”",
-	"“The only limit to our realization of tomorrow will be our doubts of today.” - Franklin D. Roosevelt",
-	"“The best way to predict the future is to create it.” - Peter Drucker",
+	"“10 points to Gryffindor” - Dumbledore",
+	"“I am not a robot, probably”",
 	"“The only thing that stands between you and your dream is the will to try and the belief that it is actually possible.” - Joel Brown",
 	"“The best way to find yourself is to lose yourself in the service of others.” - Mahatma Gandhi",
 	"“The only thing standing between you and your goal is the story you keep telling yourself as to why you can't achieve it.” - Jordan Belfort",
