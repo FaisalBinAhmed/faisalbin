@@ -19,14 +19,12 @@ export default Projects;
 const ProjectCard = ({ project }: { project: Project }) => {
 	return (
 		<div className="flex flex-col bg-black hover:bg-[#252525] text-white rounded-xl border border-white/[0.1] p-4">
-			<div className="flex flex-row justify-between gap-2 mb-2">
+			<div className="flex flex-col-reverse md:flex-row justify-between gap-4 mb-2">
 				<div className="flex flex-col gap-2">
 					<div className="text-xl">{project.title}</div>
 					<div className="text-neutral-400">{project.desc}</div>
 				</div>
-				{project.logo && (
-					<img src={project.logo || ""} className="w-20 h-20 ml-4" />
-				)}
+				{project.logo && <img src={project.logo || ""} className="w-20 h-20" />}
 			</div>
 			<div className="flex flex-row justify-between items-center mt-2">
 				<Tags tags={project.tags} />
