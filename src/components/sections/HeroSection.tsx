@@ -11,41 +11,50 @@ const HeroSection = () => {
 					I've recently finished my Master's of Informatics at Technical
 					University of Munich. I'm working full-time as a software engineer at
 					Brainlab. If you want to know more about me, head over to my{" "}
-					<Link className=" text-emerald-500" href="/about">
+					<Link className=" text-blue-400" href="/about">
 						About Me
 					</Link>{" "}
 					page.
 				</p>
-				<p className="py-4">Don't forget to follow me on social sites:</p>
+				<p className="py-4">You can follow me on the web:</p>
 				<div className="flex flex-row gap-4 flex-wrap">
-					<a href="https://twitter.com/FaisalBAhmed" target="_blank">
+					<Link href="https://twitter.com/FaisalBAhmed" target="_blank">
 						<img
 							className="w-10 grayscale hover:grayscale-0"
 							src="/assets/twitter.png"
 							title="Twitter"
 						/>
-					</a>
-					<a href="https://medium.com/@Faisalbin" target="_blank">
-						<img
-							className="w-10 grayscale hover:grayscale-0"
-							src="/assets/medium.png"
-							title="Medium"
-						/>
-					</a>
-					<a href="https://github.com/FaisalBinAhmed" target="_blank">
+					</Link>
+					<Link href="https://github.com/FaisalBinAhmed" target="_blank">
 						<img
 							className="w-10 grayscale hover:grayscale-0"
 							src="/assets/github.png"
 							title="Github"
 						/>
-					</a>
-					<a href="https://linkedin.com/in/faisalbin/" target="_blank">
+					</Link>
+					<Link href="https://linkedin.com/in/faisalbin/" target="_blank">
 						<img
 							className="w-10 grayscale hover:grayscale-0"
 							src="/assets/linkedin.png"
 							title="LinkedIn"
 						/>
-					</a>
+					</Link>
+					<Link href="https://medium.com/@Faisalbin" target="_blank">
+						<img
+							className="w-10 grayscale hover:grayscale-0"
+							src="/assets/medium.png"
+							title="Medium"
+						/>
+					</Link>
+					<Link
+						href="https://scholar.google.com/citations?user=4pRyR60AAAAJ&hl=en"
+						target="_blank">
+						<img
+							className="w-10 grayscale hover:grayscale-0"
+							src="/assets/scholar.svg"
+							title="Scholar"
+						/>
+					</Link>
 				</div>
 			</div>
 		</div>

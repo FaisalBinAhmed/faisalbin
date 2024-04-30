@@ -11,6 +11,9 @@ const NavMenu = () => {
 				<Link href="/projects">
 					<div className="text-neutral-400 ">Projects</div>
 				</Link>
+				<Link href="/publications">
+					<div className="text-neutral-400 ">Publications</div>
+				</Link>
 				<Link href="/contact">
 					<div className="text-neutral-400 ">Contact</div>
 				</Link>

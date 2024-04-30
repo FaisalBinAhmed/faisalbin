@@ -24,12 +24,12 @@ const navItems: Array<NavItem> = [
 		route: "/projects"
 	},
 	{
-		title: "Research",
+		title: "Publications",
 		desc: "Published papers, academic articles",
 		color: "#fbd46d",
 		icon: "/assets/icons/academic.svg",
 
-		route: "/papers"
+		route: "/publications"
 	},
 	{
 		title: "Designs",
@@ -45,7 +45,7 @@ const navItems: Array<NavItem> = [
 		desc: "Download my current resume",
 		icon: "/assets/icons/document-text.svg",
 
-		route: "/"
+		route: "/resume"
 	}
 ];
 export default navItems;
