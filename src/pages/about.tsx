@@ -6,7 +6,6 @@ const About = () => {
 	return (
 		<div className="flex flex-col h-screen flex-1 md:overflow-scroll p-4 md:p-8 gap-4">
 			<p className="text-xl">About 👋</p>
-			<p className="py-4">Welcome to my personal website.</p>
 			<p>
 				I've recently finished my Master's of Informatics at Technical
 				University of Munich. I'm working full-time as a software engineer at
@@ -35,25 +34,27 @@ const TechnicalDetails = () => {
 		<div className="flex flex-col gap-4 bg-black text-green-600 rounded-xl border border-green-100/[0.1] p-4">
 			<p className="text-xl">Technical Details</p>
 			<p>
-				Framework - Next.js
+				Framework: Next.js
 				<br />
-				Language - TypeScript
+				Language: TypeScript
 				<br />
-				Styling - Tailwind CSS
+				Styling: Tailwind CSS
 				<br />
-				Hosting - Vercel
+				Hosting: Vercel
 				<br />
 				Last Deployed:{" "}
 				{deploymentInfo &&
 					new Date(deploymentInfo.created).toLocaleDateString()}
 				<br />
 				Source Code:{" "}
-				<Link href="" target="_blank">
+				<Link href="" className="underline" target="_blank">
 					Github
 				</Link>
 				<br />
 				You can access the previos version of this website at{" "}
-				<Link href="https://faisalbinahmed.github.io">Github Pages</Link>
+				<Link className="underline" href="https://faisalbinahmed.github.io">
+					Github Pages
+				</Link>
 			</p>
 		</div>
 	);
