@@ -15,7 +15,7 @@ const ExternalCard = ({ title, desc, icon, link }: ExternalCardProps) => {
 			target="_blank"
 			className="flex flex-col gap-2 min-h-32 bg-black hover:bg-[#252525] p-2 rounded-xl border border-white/[0.1] ">
 			<div className="flex justify-between items-center">
-				<h1 className="text-xl p-2">{title}</h1>
+				<h1 className="p-2">{title}</h1>
 				<Image
 					src={icon}
 					className="w-12"

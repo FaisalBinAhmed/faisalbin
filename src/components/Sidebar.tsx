@@ -46,7 +46,7 @@ const MobileNaveMenu = () => {
 		<div className="w-screen bg-black ">
 			<div
 				style={{ scrollbarWidth: "none" }}
-				className="flex flex-row overflow-scroll justify-between p-4 py-8 gap-4">
+				className="flex flex-row overflow-scroll justify-between p-4 px-6 py-8 gap-4">
 				{paths.map(({ path, name }) => (
 					<Link key={path} href={path}>
 						<div className={getActiveClass(pathname, path)}>{name}</div>
