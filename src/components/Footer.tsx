@@ -25,7 +25,7 @@ const Footer = () => {
 					<>
 						{" "}
 						| Deployed on{" "}
-						{new Date(deploymentInfo.created).toLocaleDateString()}
+						{new Date(deploymentInfo.created).toLocaleDateString("en-DE")}
 					</>
 				)}
 			</p>

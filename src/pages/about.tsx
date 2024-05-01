@@ -44,7 +44,7 @@ const TechnicalDetails = () => {
 				<br />
 				Last Deployed:{" "}
 				{deploymentInfo &&
-					new Date(deploymentInfo.created).toLocaleDateString()}
+					new Date(deploymentInfo.created).toLocaleDateString("en-DE")}
 				<br />
 				Source Code:{" "}
 				<Link href="" className="underline" target="_blank">
