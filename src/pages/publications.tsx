@@ -6,8 +6,8 @@ const Publications = () => {
 		<div className="flex flex-col h-screen flex-1 md:overflow-scroll p-4 md:p-8 gap-4">
 			<div className="text-2xl font-bold">Publications</div>
 			<div className="text-neutral-400">
-				A list of papers that I have written and published. I also write
-				technical articles about Rust, TypeScript, and Swift on{" "}
+				A list of academic papers that I have written and published. I also
+				write technical articles about Rust, TypeScript, and Swift on{" "}
 				<Link
 					target="_blank"
 					className="text-blue-400"

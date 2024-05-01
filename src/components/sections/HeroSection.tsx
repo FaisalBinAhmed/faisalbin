@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const HeroSection = () => {
@@ -19,40 +20,50 @@ const HeroSection = () => {
 				<p className="py-4">You can follow me on the web:</p>
 				<div className="flex flex-row gap-4 flex-wrap">
 					<Link href="https://twitter.com/FaisalBAhmed" target="_blank">
-						<img
+						<Image
 							className="w-10 grayscale hover:grayscale-0"
 							src="/assets/twitter.png"
-							title="Twitter"
+							alt="Twitter"
+							width={128}
+							height={128}
 						/>
 					</Link>
 					<Link href="https://github.com/FaisalBinAhmed" target="_blank">
-						<img
+						<Image
 							className="w-10 grayscale hover:grayscale-0"
 							src="/assets/github.png"
-							title="Github"
+							alt="Github"
+							width={128}
+							height={128}
 						/>
 					</Link>
 					<Link href="https://linkedin.com/in/faisalbin/" target="_blank">
-						<img
+						<Image
 							className="w-10 grayscale hover:grayscale-0"
 							src="/assets/linkedin.png"
-							title="LinkedIn"
+							alt="LinkedIn"
+							width={128}
+							height={128}
 						/>
 					</Link>
 					<Link href="https://medium.com/@Faisalbin" target="_blank">
-						<img
+						<Image
 							className="w-10 grayscale hover:grayscale-0"
 							src="/assets/medium.png"
-							title="Medium"
+							alt="Medium"
+							width={128}
+							height={128}
 						/>
 					</Link>
 					<Link
 						href="https://scholar.google.com/citations?user=4pRyR60AAAAJ&hl=en"
 						target="_blank">
-						<img
+						<Image
 							className="w-10 grayscale hover:grayscale-0"
 							src="/assets/scholar.svg"
-							title="Scholar"
+							alt="Scholar"
+							width={128}
+							height={128}
 						/>
 					</Link>
 				</div>

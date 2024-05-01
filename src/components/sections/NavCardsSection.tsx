@@ -1,4 +1,5 @@
 import navItems from "@/data/navItems";
+import Image from "next/image";
 import Link from "next/link";
 
 const NavCardsSection = () => {
@@ -39,7 +40,13 @@ const Card = ({ title, desc, color, icon, link }: CardProps) => {
 			<Link href={link}>
 				<div className="flex justify-between items-center">
 					<h1 className="text-xl p-2">{title}</h1>
-					<img src={icon} className="w-10" />
+					<Image
+						src={icon}
+						className="w-10"
+						alt={title}
+						width={128}
+						height={128}
+					/>
 				</div>
 
 				<p className="text-neutral-400 p-2">{desc}</p>

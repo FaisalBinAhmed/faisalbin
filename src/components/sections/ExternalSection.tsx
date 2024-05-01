@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const ExternalSection = () => {
@@ -38,7 +39,13 @@ const ExternalCard = ({ title, desc, color, icon, link }: CardProps) => {
 			<Link href={link} target="_blank">
 				<div className="flex justify-between items-center">
 					<h1 className="text-xl p-2">{title}</h1>
-					<img src={icon} className="w-12" />
+					<Image
+						src={icon}
+						className="w-12"
+						alt={title}
+						width={128}
+						height={128}
+					/>
 				</div>
 
 				<p className="text-neutral-400 p-2">{desc}</p>
