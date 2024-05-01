@@ -24,12 +24,12 @@ const navItems: Array<NavItem> = [
 		route: "/projects"
 	},
 	{
-		title: "Publications",
+		title: "Papers",
 		desc: "Published papers, academic articles",
 		color: "#fbd46d",
 		icon: "/assets/icons/academic.svg",
 
-		route: "/publications"
+		route: "/papers"
 	},
 	{
 		title: "Designs",

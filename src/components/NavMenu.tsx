@@ -9,7 +9,7 @@ export const getActiveClass = (pathname: string, path: string) => {
 export const paths = [
 	{ path: "/", name: "Home" },
 	{ path: "/projects", name: "Projects" },
-	{ path: "/publications", name: "Publications" },
+	{ path: "/papers", name: "Papers" },
 	{ path: "/designs", name: "Designs" },
 	{ path: "/about", name: "About" },
 	{ path: "/contact", name: "Contact" }

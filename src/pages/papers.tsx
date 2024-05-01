@@ -2,10 +2,10 @@ import PublicationCard from "@/components/PublicationCard";
 import { publications } from "@/data/publications";
 import Link from "next/link";
 
-const Publications = () => {
+const Papers = () => {
 	return (
 		<div className="flex flex-col h-screen flex-1 md:overflow-scroll p-4 md:p-8 gap-4">
-			<div className="text-2xl font-bold p-2">Publications</div>
+			<div className="text-2xl font-bold p-2">Papers</div>
 			<div className="text-neutral-400 p-2">
 				A list of academic papers that I have written and published. I also
 				write technical articles about Rust, TypeScript, and Swift on{" "}
@@ -26,4 +26,4 @@ const Publications = () => {
 	);
 };
 
-export default Publications;
+export default Papers;
