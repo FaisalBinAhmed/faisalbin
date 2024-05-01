@@ -5,8 +5,8 @@ import { useContext } from "react";
 const About = () => {
 	return (
 		<div className="flex flex-col h-screen flex-1 md:overflow-scroll p-4 md:p-8 gap-4">
-			<p className="text-xl">About 👋</p>
-			<p>
+			<p className="text-xl p-2">About 👋</p>
+			<p className="p-2">
 				I've recently finished my Master's of Informatics at Technical
 				University of Munich. I'm working full-time as a software engineer at
 				Brainlab. If you want to know more about me, head over to my page.

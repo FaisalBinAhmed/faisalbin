@@ -17,7 +17,7 @@ const NavCard = ({ title, desc, icon, link }: NavCardProps) => {
 				<h1 className="text-xl p-2">{title}</h1>
 				<Image
 					src={icon}
-					className="w-10"
+					className="w-10 mt-1 mr-1"
 					alt={title}
 					width={128}
 					height={128}

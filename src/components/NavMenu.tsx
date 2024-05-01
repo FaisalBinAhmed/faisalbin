@@ -2,11 +2,11 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 import { useRouter } from "next/router";
 
-const getActiveClass = (pathname: string, path: string) => {
+export const getActiveClass = (pathname: string, path: string) => {
 	return pathname === path ? "text-white" : "text-neutral-400";
 };
 
-const paths = [
+export const paths = [
 	{ path: "/", name: "Home" },
 	{ path: "/projects", name: "Projects" },
 	{ path: "/publications", name: "Publications" },
