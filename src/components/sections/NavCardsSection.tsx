@@ -1,6 +1,5 @@
 import navItems from "@/data/navItems";
-import Image from "next/image";
-import Link from "next/link";
+import NavCard from "@/components/NavCard";
 
 const NavCardsSection = () => {
 	return (
@@ -8,11 +7,10 @@ const NavCardsSection = () => {
 			{/* <div className="min-w-[340px] text-right"></div> */}
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
 				{navItems.map((item, index) => (
-					<Card
+					<NavCard
 						key={index}
 						title={item.title}
 						desc={item.desc}
-						color={item.color}
 						icon={item.icon}
 						link={item.route}
 					/>
@@ -23,34 +21,3 @@ const NavCardsSection = () => {
 };
 
 export default NavCardsSection;
-
-type CardProps = {
-	title: string;
-	desc: string;
-	color: string;
-	icon: string;
-	link: string;
-};
-
-const Card = ({ title, desc, color, icon, link }: CardProps) => {
-	return (
-		<div
-			// style={{ outlineColor: color }}
-			className="flex flex-col gap-2 p-2 min-h-32 bg-black hover:bg-[#252525] text-white rounded-xl border border-white/[0.1]">
-			<Link href={link}>
-				<div className="flex justify-between items-center">
-					<h1 className="text-xl p-2">{title}</h1>
-					<Image
-						src={icon}
-						className="w-10"
-						alt={title}
-						width={128}
-						height={128}
-					/>
-				</div>
-
-				<p className="text-neutral-400 p-2">{desc}</p>
-			</Link>
-		</div>
-	);
-};
