@@ -1,28 +1,31 @@
 import Link from "next/link";
-import Footer from "./Footer";
+import Footer from "@/components/Footer";
+import { useRouter } from "next/router";
+
+const getActiveClass = (pathname: string, path: string) => {
+	return pathname === path ? "text-white" : "text-neutral-400";
+};
+
+const paths = [
+	{ path: "/", name: "Home" },
+	{ path: "/projects", name: "Projects" },
+	{ path: "/publications", name: "Publications" },
+	{ path: "/designs", name: "Designs" },
+	{ path: "/about", name: "About" },
+	{ path: "/contact", name: "Contact" }
+];
 
 const NavMenu = () => {
+	const { pathname } = useRouter();
+
 	return (
 		<div className="flex flex-col h-full justify-between">
 			<div className="flex flex-col gap-4 my-8 mx-8 text-right">
-				<Link href="/">
-					<div className="text-neutral-400 ">Home</div>
-				</Link>
-				<Link href="/projects">
-					<div className="text-neutral-400 ">Projects</div>
-				</Link>
-				<Link href="/publications">
-					<div className="text-neutral-400 ">Publications</div>
-				</Link>
-				<Link href="/designs">
-					<div className="text-neutral-400 ">Designs</div>
-				</Link>
-				<Link href="/about">
-					<div className="text-neutral-400 ">About</div>
-				</Link>
-				<Link href="/contact">
-					<div className="text-neutral-400 ">Contact</div>
-				</Link>
+				{paths.map(({ path, name }) => (
+					<Link key={path} href={path}>
+						<div className={getActiveClass(pathname, path)}>{name}</div>
+					</Link>
+				))}
 			</div>
 			<div className="w-full">
 				<Footer />

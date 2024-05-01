@@ -13,7 +13,7 @@ export async function fetchDeploymentInfo() {
 		const token = process.env.VERCEL_TOKEN;
 		const projectId = process.env.PROJECT_ID;
 		const response = await fetch(
-			`https://api.vercel.com/v5/now/deployments?projectId=${projectId}&limit=1`,
+			`https://api.vercel.com/v5/now/deployments?projectId=${projectId}&limit=1&state=READY`,
 			{
 				headers: {
 					Authorization: `Bearer ${token}`

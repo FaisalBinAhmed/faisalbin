@@ -9,9 +9,9 @@ const HeroSection = () => {
 				<p className="text-xl">Hello, there! 👋</p>
 				<p className="py-4">Welcome to my personal website.</p>
 				<p>
-					I've recently finished my Master's of Informatics at Technical
-					University of Munich. I'm working full-time as a software engineer at
-					Brainlab. If you want to know more about me, head over to my{" "}
+					I'm working as a full stack software engineer at Tacto. I finished my
+					Master's of Informatics at Technical University of Munich. If you want
+					to know more about me, head over to my{" "}
 					<Link className=" text-blue-400" href="/about">
 						About Me
 					</Link>{" "}
