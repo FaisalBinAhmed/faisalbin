@@ -147,7 +147,9 @@ const TechnicalDetails = () => {
 				</Link>
 				<br />
 				You can access the previos version of this website at{" "}
-				<Link className="underline" href="https://faisalbinahmed.github.io">
+				<Link
+					className="underline"
+					href="https://personal-site-sigma-brown.vercel.app/">
 					Github Pages
 				</Link>
 			</p>
