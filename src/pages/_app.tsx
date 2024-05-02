@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import Sidebar from "@/components/Sidebar";
 import { VercelProvider } from "@/contexts/VercelContext";
 import "@/styles/globals.css";
@@ -12,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<main
 			className={`flex h-screen flex-col md:flex-row items-center ${jbm.className}`}>
+			<Analytics />
 			<VercelProvider>
 				<Sidebar />
 				<Component {...pageProps} />
