@@ -4,10 +4,6 @@ import NavMenu, { getActiveClass, paths } from "./NavMenu";
 import Link from "next/link";
 
 const Sidebar = () => {
-	const { pathname } = useRouter();
-
-	// const isHome = pathname === "/";
-
 	return (
 		<>
 			<div className="hidden md:flex h-full">
@@ -23,10 +19,6 @@ const Sidebar = () => {
 export default Sidebar;
 
 const LandscapeSidebar = () => {
-	// const { pathname } = useRouter();
-
-	// const isHome = pathname === "/";
-
 	return (
 		<div className="w-[340px] bg-black">
 			<div className="flex h-full flex-col justify-between">

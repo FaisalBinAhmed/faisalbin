@@ -1,5 +1,6 @@
 import { VercelContext } from "@/contexts/VercelContext";
 import { getApproximateAge } from "@/helpers";
+import Image from "next/image";
 import Link from "next/link";
 import { useContext } from "react";
 
@@ -7,6 +8,15 @@ const About = () => {
 	return (
 		<div className="flex flex-col h-screen flex-1 md:overflow-scroll p-4 md:p-8 gap-4">
 			<p className="text-xl p-2">About 👋</p>
+
+			<Image
+				src="/assets/me.jpg"
+				alt="Faisal Ahmed"
+				width={160}
+				height={160}
+				className="p-2"
+			/>
+
 			<p className="p-2">
 				I'm a {getApproximateAge()} years old software engineer based in Munich.
 				I was born and raised in Dhaka, Bangladesh.
