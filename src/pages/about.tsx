@@ -113,14 +113,14 @@ const About = () => {
 
 export default About;
 
-const TimeLine = () => {
-	return (
-		<div className="flex flex-col gap-4 bg-black text-green-500 rounded-xl border border-green-100/[0.1] p-4">
-			<p className="text-xl">Timeline</p>
-			<p>2013 - Started my Bachelor's in Computer Science at University of</p>
-		</div>
-	);
-};
+// const TimeLine = () => {
+// 	return (
+// 		<div className="flex flex-col gap-4 bg-black text-green-500 rounded-xl border border-green-100/[0.1] p-4">
+// 			<p className="text-xl">Timeline</p>
+// 			<p>2013 - Started my Bachelor's in Computer Science at University of</p>
+// 		</div>
+// 	);
+// };
 
 const TechnicalDetails = () => {
 	const { deploymentInfo } = useContext(VercelContext);
@@ -142,14 +142,18 @@ const TechnicalDetails = () => {
 					new Date(deploymentInfo.created).toLocaleDateString("en-DE")}
 				<br />
 				Source Code:{" "}
-				<Link href="" className="underline" target="_blank">
+				<Link
+					href="https://github.com/FaisalBinAhmed/faisalbin"
+					className="underline"
+					target="_blank">
 					Github
 				</Link>
 				<br />
 				You can access the previos version of this website at{" "}
 				<Link
 					className="underline"
-					href="https://personal-site-sigma-brown.vercel.app/">
+					target="_blank"
+					href="https://faisalbin-old.vercel.app/">
 					Github Pages
 				</Link>
 			</p>
