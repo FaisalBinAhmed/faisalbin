@@ -15,6 +15,7 @@ const About = () => {
 				width={160}
 				height={160}
 				className="p-2"
+				priority
 			/>
 
 			<p className="p-2">
