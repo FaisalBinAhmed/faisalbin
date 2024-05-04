@@ -150,12 +150,12 @@ const TechnicalDetails = () => {
 					Github
 				</Link>
 				<br />
-				You can access the previos version of this website at{" "}
+				You can access the previos version of this website{" "}
 				<Link
 					className="underline"
 					target="_blank"
 					href="https://faisalbin-old.vercel.app/">
-					Github Pages
+					here
 				</Link>
 			</p>
 		</div>
