@@ -40,9 +40,17 @@ const navItems: Array<NavItem> = [
 		route: "/designs"
 	},
 	{
+		title: "Blogs",
+		desc: "Technical articles, reviews, essays",
+		color: "#f48fb1",
+		icon: "/assets/icons/megaphone.svg",
+
+		route: "/blogs"
+	},
+	{
 		title: "Resume",
 		color: "#e1ccec",
-		desc: "Download my current resume",
+		desc: "Access my current resume",
 		icon: "/assets/icons/document-text.svg",
 
 		route: "/resume"

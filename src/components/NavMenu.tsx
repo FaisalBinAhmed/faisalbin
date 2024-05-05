@@ -11,6 +11,7 @@ export const paths = [
 	{ path: "/projects", name: "Projects" },
 	{ path: "/papers", name: "Papers" },
 	{ path: "/designs", name: "Designs" },
+	{ path: "/blogs", name: "Blogs" },
 	{ path: "/about", name: "About" },
 	{ path: "/contact", name: "Contact" }
 ];

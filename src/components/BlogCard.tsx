@@ -6,7 +6,7 @@ const BlogCard = ({ item }: { item: Item }) => {
 		<div className="flex flex-col bg-black hover:bg-[#252525] text-white rounded-xl border border-white/[0.1] p-4">
 			<Link href={item.link} target="_blank">
 				<div className="text-xl">{item.title}</div>
-				<div className="text-neutral-400 text-sm">
+				<div className="text-neutral-400 text-sm mt-2 mb-4">
 					{new Date(item.pubDate).toLocaleDateString("en-DE")}
 				</div>
 				<div className="flex gap-2 flex-wrap mt-2">
