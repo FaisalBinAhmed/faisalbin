@@ -1,4 +1,3 @@
-import { VercelContext } from "@/contexts/VercelContext";
 import { getApproximateAge } from "@/helpers";
 import Image from "next/image";
 import Link from "next/link";
@@ -124,7 +123,6 @@ export default About;
 // };
 
 const TechnicalDetails = () => {
-	const { deploymentInfo } = useContext(VercelContext);
 
 	return (
 		<div className="flex flex-col gap-4 bg-black text-green-600 rounded-xl border border-green-100/[0.1] p-4">
@@ -135,12 +133,6 @@ const TechnicalDetails = () => {
 				Language: TypeScript
 				<br />
 				Styling: Tailwind CSS
-				<br />
-				Hosting: Vercel
-				<br />
-				Last Deployed:{" "}
-				{deploymentInfo &&
-					new Date(deploymentInfo.created).toLocaleDateString("en-DE")}
 				<br />
 				Source Code:{" "}
 				<Link

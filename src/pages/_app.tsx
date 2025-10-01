@@ -1,6 +1,4 @@
-import { Analytics } from "@vercel/analytics/react";
 import Sidebar from "@/components/Sidebar";
-import { VercelProvider } from "@/contexts/VercelContext";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { JetBrains_Mono } from "next/font/google";
@@ -17,11 +15,8 @@ export default function App({ Component, pageProps }: AppProps) {
 			<Head>
 				<title>Faisal Bin Ahmed</title>
 			</Head>
-			<Analytics />
-			<VercelProvider>
-				<Sidebar />
-				<Component {...pageProps} />
-			</VercelProvider>
+			<Sidebar />
+			<Component {...pageProps} />
 		</main>
 	);
 }
