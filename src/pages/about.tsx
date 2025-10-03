@@ -1,7 +1,6 @@
 import { getApproximateAge } from "@/helpers";
 import Image from "next/image";
 import Link from "next/link";
-import { useContext } from "react";
 
 const About = () => {
 	return (
@@ -57,7 +56,7 @@ const About = () => {
 			<p className="p-2">
 				Before that I worked at{" "}
 				<Link
-					href="https://www.robosoftin.com/"
+					href="https://www.joyn.de"
 					className="text-blue-400"
 					target="_blank">
 					Joyn
@@ -140,14 +139,6 @@ const TechnicalDetails = () => {
 					className="underline"
 					target="_blank">
 					Github
-				</Link>
-				<br />
-				You can access the previos version of this website{" "}
-				<Link
-					className="underline"
-					target="_blank"
-					href="https://faisalbin-old.vercel.app/">
-					here
 				</Link>
 			</p>
 		</div>
